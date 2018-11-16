@@ -33,5 +33,8 @@ mvn clean install jib:dockerBuild
 
 ```shell
 mvn clean install jib:buildTar
-docker load --input target/jib-image.tar
+sudo docker load --input target/jib-image.tar
+sudo dock run -p 8080:8080 kumuluz-microservice
 ```
+
+[Download](target)
